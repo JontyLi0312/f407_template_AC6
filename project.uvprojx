@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\CORE;.\SYSTEM\delay;.\SYSTEM\sys;.\SYSTEM\usart;.\USER;.\FWLIB\inc</IncludePath>
+              <IncludePath>.\CORE;.\FWLIB\inc;.\SYSTEM\sys;.\USER;.\SYSTEM\delay;.\SYSTEM\usart</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
