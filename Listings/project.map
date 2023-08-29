@@ -9,18 +9,18 @@ Section Cross References
     startup_stm32f40_41xxx.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
     startup_stm32f40_41xxx.o(RESET) refers to startup_stm32f40_41xxx.o(STACK) for __initial_sp
     startup_stm32f40_41xxx.o(RESET) refers to startup_stm32f40_41xxx.o(.text) for Reset_Handler
-    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-7e63a2.o(.text.NMI_Handler) for NMI_Handler
-    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-7e63a2.o(.text.HardFault_Handler) for HardFault_Handler
-    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-7e63a2.o(.text.MemManage_Handler) for MemManage_Handler
-    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-7e63a2.o(.text.BusFault_Handler) for BusFault_Handler
-    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-7e63a2.o(.text.UsageFault_Handler) for UsageFault_Handler
-    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-7e63a2.o(.text.SVC_Handler) for SVC_Handler
-    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-7e63a2.o(.text.DebugMon_Handler) for DebugMon_Handler
-    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-7e63a2.o(.text.PendSV_Handler) for PendSV_Handler
-    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-7e63a2.o(.text.SysTick_Handler) for SysTick_Handler
-    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-7e63a2.o(.text.USART1_IRQHandler) for USART1_IRQHandler
+    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-d79267.o(.text.NMI_Handler) for NMI_Handler
+    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-d79267.o(.text.HardFault_Handler) for HardFault_Handler
+    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-d79267.o(.text.MemManage_Handler) for MemManage_Handler
+    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-d79267.o(.text.BusFault_Handler) for BusFault_Handler
+    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-d79267.o(.text.UsageFault_Handler) for UsageFault_Handler
+    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-d79267.o(.text.SVC_Handler) for SVC_Handler
+    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-d79267.o(.text.DebugMon_Handler) for DebugMon_Handler
+    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-d79267.o(.text.PendSV_Handler) for PendSV_Handler
+    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-d79267.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_stm32f40_41xxx.o(RESET) refers to lto-llvm-d79267.o(.text.USART1_IRQHandler) for USART1_IRQHandler
     startup_stm32f40_41xxx.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
-    startup_stm32f40_41xxx.o(.text) refers to lto-llvm-7e63a2.o(.text.SystemInit) for SystemInit
+    startup_stm32f40_41xxx.o(.text) refers to lto-llvm-d79267.o(.text.SystemInit) for SystemInit
     startup_stm32f40_41xxx.o(.text) refers to __main.o(!!!main) for __main
     startup_stm32f40_41xxx.o(.text) refers to startup_stm32f40_41xxx.o(HEAP) for Heap_Mem
     startup_stm32f40_41xxx.o(.text) refers to startup_stm32f40_41xxx.o(STACK) for Stack_Mem
@@ -84,7 +84,7 @@ Section Cross References
     libinit2.o(.ARM.Collect$$libinit$$00000028) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
     libinit2.o(.ARM.Collect$$libinit$$00000029) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
     rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
-    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to lto-llvm-7e63a2.o(.text._sys_exit) for _sys_exit
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to lto-llvm-d79267.o(.text._sys_exit) for _sys_exit
     rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
     rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
     rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
@@ -107,8 +107,8 @@ Section Cross References
     defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
     defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
     rt_raise.o(.text) refers to __raise.o(.text) for __raise
-    rt_raise.o(.text) refers to lto-llvm-7e63a2.o(.text._sys_exit) for _sys_exit
-    defsig_exit.o(.text) refers to lto-llvm-7e63a2.o(.text._sys_exit) for _sys_exit
+    rt_raise.o(.text) refers to lto-llvm-d79267.o(.text._sys_exit) for _sys_exit
+    defsig_exit.o(.text) refers to lto-llvm-d79267.o(.text._sys_exit) for _sys_exit
     defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
     __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
     defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
@@ -125,54 +125,54 @@ Section Cross References
     defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
     defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
     defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
-    lto-llvm-7e63a2.o(.ARM.exidx.text.USART_ReceiveData) refers to lto-llvm-7e63a2.o(.text.USART_ReceiveData) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.ARM.exidx.text.USART_GetITStatus) refers to lto-llvm-7e63a2.o(.text.USART_GetITStatus) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.ARM.exidx.text._sys_exit) refers to lto-llvm-7e63a2.o(.text._sys_exit) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.ARM.exidx.text.fputc) refers to lto-llvm-7e63a2.o(.text.fputc) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.text.USART1_IRQHandler) refers to lto-llvm-7e63a2.o(.text.USART_GetITStatus) for USART_GetITStatus
-    lto-llvm-7e63a2.o(.text.USART1_IRQHandler) refers to lto-llvm-7e63a2.o(.text.USART_ReceiveData) for USART_ReceiveData
-    lto-llvm-7e63a2.o(.text.USART1_IRQHandler) refers to lto-llvm-7e63a2.o(.bss.USART_RX_STA) for USART_RX_STA
-    lto-llvm-7e63a2.o(.ARM.exidx.text.USART1_IRQHandler) refers to lto-llvm-7e63a2.o(.text.USART1_IRQHandler) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.ARM.exidx.text.main) refers to lto-llvm-7e63a2.o(.text.main) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.ARM.exidx.text.NMI_Handler) refers to lto-llvm-7e63a2.o(.text.NMI_Handler) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.ARM.exidx.text.HardFault_Handler) refers to lto-llvm-7e63a2.o(.text.HardFault_Handler) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.ARM.exidx.text.MemManage_Handler) refers to lto-llvm-7e63a2.o(.text.MemManage_Handler) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.ARM.exidx.text.BusFault_Handler) refers to lto-llvm-7e63a2.o(.text.BusFault_Handler) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.ARM.exidx.text.UsageFault_Handler) refers to lto-llvm-7e63a2.o(.text.UsageFault_Handler) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.ARM.exidx.text.SVC_Handler) refers to lto-llvm-7e63a2.o(.text.SVC_Handler) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.ARM.exidx.text.DebugMon_Handler) refers to lto-llvm-7e63a2.o(.text.DebugMon_Handler) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.ARM.exidx.text.PendSV_Handler) refers to lto-llvm-7e63a2.o(.text.PendSV_Handler) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.ARM.exidx.text.SysTick_Handler) refers to lto-llvm-7e63a2.o(.text.SysTick_Handler) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.text.SystemInit) refers to lto-llvm-7e63a2.o(.text.SetSysClock) for SetSysClock
-    lto-llvm-7e63a2.o(.ARM.exidx.text.SystemInit) refers to lto-llvm-7e63a2.o(.text.SystemInit) for [Anonymous Symbol]
-    lto-llvm-7e63a2.o(.ARM.exidx.text.SetSysClock) refers to lto-llvm-7e63a2.o(.text.SetSysClock) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.ARM.exidx.text.USART_ReceiveData) refers to lto-llvm-d79267.o(.text.USART_ReceiveData) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.ARM.exidx.text.USART_GetITStatus) refers to lto-llvm-d79267.o(.text.USART_GetITStatus) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.ARM.exidx.text._sys_exit) refers to lto-llvm-d79267.o(.text._sys_exit) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.ARM.exidx.text.fputc) refers to lto-llvm-d79267.o(.text.fputc) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.text.USART1_IRQHandler) refers to lto-llvm-d79267.o(.text.USART_GetITStatus) for USART_GetITStatus
+    lto-llvm-d79267.o(.text.USART1_IRQHandler) refers to lto-llvm-d79267.o(.text.USART_ReceiveData) for USART_ReceiveData
+    lto-llvm-d79267.o(.text.USART1_IRQHandler) refers to lto-llvm-d79267.o(.bss.USART_RX_STA) for USART_RX_STA
+    lto-llvm-d79267.o(.ARM.exidx.text.USART1_IRQHandler) refers to lto-llvm-d79267.o(.text.USART1_IRQHandler) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.ARM.exidx.text.main) refers to lto-llvm-d79267.o(.text.main) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.ARM.exidx.text.NMI_Handler) refers to lto-llvm-d79267.o(.text.NMI_Handler) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.ARM.exidx.text.HardFault_Handler) refers to lto-llvm-d79267.o(.text.HardFault_Handler) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.ARM.exidx.text.MemManage_Handler) refers to lto-llvm-d79267.o(.text.MemManage_Handler) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.ARM.exidx.text.BusFault_Handler) refers to lto-llvm-d79267.o(.text.BusFault_Handler) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.ARM.exidx.text.UsageFault_Handler) refers to lto-llvm-d79267.o(.text.UsageFault_Handler) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.ARM.exidx.text.SVC_Handler) refers to lto-llvm-d79267.o(.text.SVC_Handler) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.ARM.exidx.text.DebugMon_Handler) refers to lto-llvm-d79267.o(.text.DebugMon_Handler) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.ARM.exidx.text.PendSV_Handler) refers to lto-llvm-d79267.o(.text.PendSV_Handler) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.ARM.exidx.text.SysTick_Handler) refers to lto-llvm-d79267.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.text.SystemInit) refers to lto-llvm-d79267.o(.text.SetSysClock) for SetSysClock
+    lto-llvm-d79267.o(.ARM.exidx.text.SystemInit) refers to lto-llvm-d79267.o(.text.SystemInit) for [Anonymous Symbol]
+    lto-llvm-d79267.o(.ARM.exidx.text.SetSysClock) refers to lto-llvm-d79267.o(.text.SetSysClock) for [Anonymous Symbol]
 
 
 ==============================================================================
 
 Removing Unused input sections from the image.
 
-    Removing lto-llvm-7e63a2.o(.text), (0 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.USART_ReceiveData), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.USART_GetITStatus), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text._sys_exit), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.text.fputc), (48 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.fputc), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.USART1_IRQHandler), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.text.main), (4 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.main), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.NMI_Handler), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.HardFault_Handler), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.MemManage_Handler), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.BusFault_Handler), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.UsageFault_Handler), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.SVC_Handler), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.DebugMon_Handler), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.PendSV_Handler), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.SystemInit), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.exidx.text.SetSysClock), (8 bytes).
-    Removing lto-llvm-7e63a2.o(.ARM.use_no_argv), (4 bytes).
+    Removing lto-llvm-d79267.o(.text), (0 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.USART_ReceiveData), (8 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.USART_GetITStatus), (8 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text._sys_exit), (8 bytes).
+    Removing lto-llvm-d79267.o(.text.fputc), (48 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.fputc), (8 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.USART1_IRQHandler), (8 bytes).
+    Removing lto-llvm-d79267.o(.text.main), (4 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.main), (8 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.NMI_Handler), (8 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.HardFault_Handler), (8 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.MemManage_Handler), (8 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.BusFault_Handler), (8 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.UsageFault_Handler), (8 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.SVC_Handler), (8 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.DebugMon_Handler), (8 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.PendSV_Handler), (8 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing lto-llvm-d79267.o(.ARM.exidx.text.SetSysClock), (8 bytes).
+    Removing lto-llvm-d79267.o(.ARM.use_no_argv), (4 bytes).
 
 21 unused section(s) (total 192 bytes) removed from the image.
 
@@ -234,7 +234,7 @@ Image Symbol Table
     ../fplib/fpinit.s                        0x00000000   Number         0  fpinit.o ABSOLUTE
     CORE/startup_stm32f40_41xxx.s            0x00000000   Number         0  startup_stm32f40_41xxx.o ABSOLUTE
     dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
-    ld-temp.o                                0x00000000   Number         0  lto-llvm-7e63a2.o ABSOLUTE
+    ld-temp.o                                0x00000000   Number         0  lto-llvm-d79267.o ABSOLUTE
     RESET                                    0x08000000   Section      392  startup_stm32f40_41xxx.o(RESET)
     !!!main                                  0x08000188   Section        8  __main.o(!!!main)
     !!!scatter                               0x08000190   Section       52  __scatter.o(!!!scatter)
@@ -287,29 +287,29 @@ Image Symbol Table
     .text                                    0x08000252   Section       74  sys_stackheap_outer.o(.text)
     .text                                    0x0800029c   Section        0  exit.o(.text)
     .text                                    0x080002b0   Section        8  libspace.o(.text)
-    [Anonymous Symbol]                       0x080002b8   Section        0  lto-llvm-7e63a2.o(.text.BusFault_Handler)
-    [Anonymous Symbol]                       0x080002bc   Section        0  lto-llvm-7e63a2.o(.text.DebugMon_Handler)
-    [Anonymous Symbol]                       0x080002c0   Section        0  lto-llvm-7e63a2.o(.text.HardFault_Handler)
-    [Anonymous Symbol]                       0x080002c4   Section        0  lto-llvm-7e63a2.o(.text.MemManage_Handler)
-    [Anonymous Symbol]                       0x080002c8   Section        0  lto-llvm-7e63a2.o(.text.NMI_Handler)
-    [Anonymous Symbol]                       0x080002cc   Section        0  lto-llvm-7e63a2.o(.text.PendSV_Handler)
-    [Anonymous Symbol]                       0x080002d0   Section        0  lto-llvm-7e63a2.o(.text.SVC_Handler)
-    SetSysClock                              0x080002d5   Thumb Code   302  lto-llvm-7e63a2.o(.text.SetSysClock)
-    [Anonymous Symbol]                       0x080002d4   Section        0  lto-llvm-7e63a2.o(.text.SetSysClock)
-    [Anonymous Symbol]                       0x08000404   Section        0  lto-llvm-7e63a2.o(.text.SysTick_Handler)
-    [Anonymous Symbol]                       0x08000408   Section        0  lto-llvm-7e63a2.o(.text.SystemInit)
-    [Anonymous Symbol]                       0x0800047c   Section        0  lto-llvm-7e63a2.o(.text.USART1_IRQHandler)
-    USART_GetITStatus                        0x08000531   Thumb Code   192  lto-llvm-7e63a2.o(.text.USART_GetITStatus)
-    [Anonymous Symbol]                       0x08000530   Section        0  lto-llvm-7e63a2.o(.text.USART_GetITStatus)
-    USART_ReceiveData                        0x080005f1   Thumb Code    24  lto-llvm-7e63a2.o(.text.USART_ReceiveData)
-    [Anonymous Symbol]                       0x080005f0   Section        0  lto-llvm-7e63a2.o(.text.USART_ReceiveData)
-    [Anonymous Symbol]                       0x08000608   Section        0  lto-llvm-7e63a2.o(.text.UsageFault_Handler)
-    [Anonymous Symbol]                       0x0800060c   Section        0  lto-llvm-7e63a2.o(.text._sys_exit)
+    [Anonymous Symbol]                       0x080002b8   Section        0  lto-llvm-d79267.o(.text.BusFault_Handler)
+    [Anonymous Symbol]                       0x080002bc   Section        0  lto-llvm-d79267.o(.text.DebugMon_Handler)
+    [Anonymous Symbol]                       0x080002c0   Section        0  lto-llvm-d79267.o(.text.HardFault_Handler)
+    [Anonymous Symbol]                       0x080002c4   Section        0  lto-llvm-d79267.o(.text.MemManage_Handler)
+    [Anonymous Symbol]                       0x080002c8   Section        0  lto-llvm-d79267.o(.text.NMI_Handler)
+    [Anonymous Symbol]                       0x080002cc   Section        0  lto-llvm-d79267.o(.text.PendSV_Handler)
+    [Anonymous Symbol]                       0x080002d0   Section        0  lto-llvm-d79267.o(.text.SVC_Handler)
+    SetSysClock                              0x080002d5   Thumb Code   302  lto-llvm-d79267.o(.text.SetSysClock)
+    [Anonymous Symbol]                       0x080002d4   Section        0  lto-llvm-d79267.o(.text.SetSysClock)
+    [Anonymous Symbol]                       0x08000404   Section        0  lto-llvm-d79267.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x08000408   Section        0  lto-llvm-d79267.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x0800047c   Section        0  lto-llvm-d79267.o(.text.USART1_IRQHandler)
+    USART_GetITStatus                        0x08000531   Thumb Code   192  lto-llvm-d79267.o(.text.USART_GetITStatus)
+    [Anonymous Symbol]                       0x08000530   Section        0  lto-llvm-d79267.o(.text.USART_GetITStatus)
+    USART_ReceiveData                        0x080005f1   Thumb Code    24  lto-llvm-d79267.o(.text.USART_ReceiveData)
+    [Anonymous Symbol]                       0x080005f0   Section        0  lto-llvm-d79267.o(.text.USART_ReceiveData)
+    [Anonymous Symbol]                       0x08000608   Section        0  lto-llvm-d79267.o(.text.UsageFault_Handler)
+    [Anonymous Symbol]                       0x0800060c   Section        0  lto-llvm-d79267.o(.text._sys_exit)
     $v0                                      0x08000614   Number         0  fpinit.o(x$fpl$fpinit)
     x$fpl$fpinit                             0x08000614   Section       26  fpinit.o(x$fpl$fpinit)
     .bss                                     0x20000000   Section       96  libspace.o(.bss)
-    USART_RX_STA                             0x20000060   Data           2  lto-llvm-7e63a2.o(.bss.USART_RX_STA)
-    [Anonymous Symbol]                       0x20000060   Section        0  lto-llvm-7e63a2.o(.bss.USART_RX_STA)
+    USART_RX_STA                             0x20000060   Data           2  lto-llvm-d79267.o(.bss.USART_RX_STA)
+    [Anonymous Symbol]                       0x20000060   Section        0  lto-llvm-d79267.o(.bss.USART_RX_STA)
     Heap_Mem                                 0x20000068   Data         512  startup_stm32f40_41xxx.o(HEAP)
     HEAP                                     0x20000068   Section      512  startup_stm32f40_41xxx.o(HEAP)
     Stack_Mem                                0x20000268   Data        1024  startup_stm32f40_41xxx.o(STACK)
@@ -492,18 +492,18 @@ Image Symbol Table
     __user_libspace                          0x080002b1   Thumb Code     8  libspace.o(.text)
     __user_perproc_libspace                  0x080002b1   Thumb Code     0  libspace.o(.text)
     __user_perthread_libspace                0x080002b1   Thumb Code     0  libspace.o(.text)
-    BusFault_Handler                         0x080002b9   Thumb Code     4  lto-llvm-7e63a2.o(.text.BusFault_Handler)
-    DebugMon_Handler                         0x080002bd   Thumb Code     2  lto-llvm-7e63a2.o(.text.DebugMon_Handler)
-    HardFault_Handler                        0x080002c1   Thumb Code     4  lto-llvm-7e63a2.o(.text.HardFault_Handler)
-    MemManage_Handler                        0x080002c5   Thumb Code     4  lto-llvm-7e63a2.o(.text.MemManage_Handler)
-    NMI_Handler                              0x080002c9   Thumb Code     2  lto-llvm-7e63a2.o(.text.NMI_Handler)
-    PendSV_Handler                           0x080002cd   Thumb Code     2  lto-llvm-7e63a2.o(.text.PendSV_Handler)
-    SVC_Handler                              0x080002d1   Thumb Code     2  lto-llvm-7e63a2.o(.text.SVC_Handler)
-    SysTick_Handler                          0x08000405   Thumb Code     2  lto-llvm-7e63a2.o(.text.SysTick_Handler)
-    SystemInit                               0x08000409   Thumb Code   116  lto-llvm-7e63a2.o(.text.SystemInit)
-    USART1_IRQHandler                        0x0800047d   Thumb Code   178  lto-llvm-7e63a2.o(.text.USART1_IRQHandler)
-    UsageFault_Handler                       0x08000609   Thumb Code     4  lto-llvm-7e63a2.o(.text.UsageFault_Handler)
-    _sys_exit                                0x0800060d   Thumb Code     8  lto-llvm-7e63a2.o(.text._sys_exit)
+    BusFault_Handler                         0x080002b9   Thumb Code     4  lto-llvm-d79267.o(.text.BusFault_Handler)
+    DebugMon_Handler                         0x080002bd   Thumb Code     2  lto-llvm-d79267.o(.text.DebugMon_Handler)
+    HardFault_Handler                        0x080002c1   Thumb Code     4  lto-llvm-d79267.o(.text.HardFault_Handler)
+    MemManage_Handler                        0x080002c5   Thumb Code     4  lto-llvm-d79267.o(.text.MemManage_Handler)
+    NMI_Handler                              0x080002c9   Thumb Code     2  lto-llvm-d79267.o(.text.NMI_Handler)
+    PendSV_Handler                           0x080002cd   Thumb Code     2  lto-llvm-d79267.o(.text.PendSV_Handler)
+    SVC_Handler                              0x080002d1   Thumb Code     2  lto-llvm-d79267.o(.text.SVC_Handler)
+    SysTick_Handler                          0x08000405   Thumb Code     2  lto-llvm-d79267.o(.text.SysTick_Handler)
+    SystemInit                               0x08000409   Thumb Code   116  lto-llvm-d79267.o(.text.SystemInit)
+    USART1_IRQHandler                        0x0800047d   Thumb Code   178  lto-llvm-d79267.o(.text.USART1_IRQHandler)
+    UsageFault_Handler                       0x08000609   Thumb Code     4  lto-llvm-d79267.o(.text.UsageFault_Handler)
+    _sys_exit                                0x0800060d   Thumb Code     8  lto-llvm-d79267.o(.text._sys_exit)
     _fp_init                                 0x08000615   Thumb Code    26  fpinit.o(x$fpl$fpinit)
     __fplib_config_fpu_vfp                   0x0800062d   Thumb Code     0  fpinit.o(x$fpl$fpinit)
     __fplib_config_pureend_doubles           0x0800062d   Thumb Code     0  fpinit.o(x$fpl$fpinit)
@@ -579,28 +579,28 @@ Memory Map of the image
     0x0800029c   0x0800029c   0x00000012   Code   RO           75    .text               c_w.l(exit.o)
     0x080002ae   0x080002ae   0x00000002   PAD
     0x080002b0   0x080002b0   0x00000008   Code   RO           83    .text               c_w.l(libspace.o)
-    0x080002b8   0x080002b8   0x00000004   Code   RO          233    .text.BusFault_Handler  lto-llvm-7e63a2.o
-    0x080002bc   0x080002bc   0x00000002   Code   RO          239    .text.DebugMon_Handler  lto-llvm-7e63a2.o
+    0x080002b8   0x080002b8   0x00000004   Code   RO          233    .text.BusFault_Handler  lto-llvm-d79267.o
+    0x080002bc   0x080002bc   0x00000002   Code   RO          239    .text.DebugMon_Handler  lto-llvm-d79267.o
     0x080002be   0x080002be   0x00000002   PAD
-    0x080002c0   0x080002c0   0x00000004   Code   RO          229    .text.HardFault_Handler  lto-llvm-7e63a2.o
-    0x080002c4   0x080002c4   0x00000004   Code   RO          231    .text.MemManage_Handler  lto-llvm-7e63a2.o
-    0x080002c8   0x080002c8   0x00000002   Code   RO          227    .text.NMI_Handler   lto-llvm-7e63a2.o
+    0x080002c0   0x080002c0   0x00000004   Code   RO          229    .text.HardFault_Handler  lto-llvm-d79267.o
+    0x080002c4   0x080002c4   0x00000004   Code   RO          231    .text.MemManage_Handler  lto-llvm-d79267.o
+    0x080002c8   0x080002c8   0x00000002   Code   RO          227    .text.NMI_Handler   lto-llvm-d79267.o
     0x080002ca   0x080002ca   0x00000002   PAD
-    0x080002cc   0x080002cc   0x00000002   Code   RO          241    .text.PendSV_Handler  lto-llvm-7e63a2.o
+    0x080002cc   0x080002cc   0x00000002   Code   RO          241    .text.PendSV_Handler  lto-llvm-d79267.o
     0x080002ce   0x080002ce   0x00000002   PAD
-    0x080002d0   0x080002d0   0x00000002   Code   RO          237    .text.SVC_Handler   lto-llvm-7e63a2.o
+    0x080002d0   0x080002d0   0x00000002   Code   RO          237    .text.SVC_Handler   lto-llvm-d79267.o
     0x080002d2   0x080002d2   0x00000002   PAD
-    0x080002d4   0x080002d4   0x0000012e   Code   RO          247    .text.SetSysClock   lto-llvm-7e63a2.o
+    0x080002d4   0x080002d4   0x0000012e   Code   RO          247    .text.SetSysClock   lto-llvm-d79267.o
     0x08000402   0x08000402   0x00000002   PAD
-    0x08000404   0x08000404   0x00000002   Code   RO          243    .text.SysTick_Handler  lto-llvm-7e63a2.o
+    0x08000404   0x08000404   0x00000002   Code   RO          243    .text.SysTick_Handler  lto-llvm-d79267.o
     0x08000406   0x08000406   0x00000002   PAD
-    0x08000408   0x08000408   0x00000074   Code   RO          245    .text.SystemInit    lto-llvm-7e63a2.o
-    0x0800047c   0x0800047c   0x000000b2   Code   RO          223    .text.USART1_IRQHandler  lto-llvm-7e63a2.o
+    0x08000408   0x08000408   0x00000074   Code   RO          245    .text.SystemInit    lto-llvm-d79267.o
+    0x0800047c   0x0800047c   0x000000b2   Code   RO          223    .text.USART1_IRQHandler  lto-llvm-d79267.o
     0x0800052e   0x0800052e   0x00000002   PAD
-    0x08000530   0x08000530   0x000000c0   Code   RO          217    .text.USART_GetITStatus  lto-llvm-7e63a2.o
-    0x080005f0   0x080005f0   0x00000018   Code   RO          215    .text.USART_ReceiveData  lto-llvm-7e63a2.o
-    0x08000608   0x08000608   0x00000004   Code   RO          235    .text.UsageFault_Handler  lto-llvm-7e63a2.o
-    0x0800060c   0x0800060c   0x00000008   Code   RO          219    .text._sys_exit     lto-llvm-7e63a2.o
+    0x08000530   0x08000530   0x000000c0   Code   RO          217    .text.USART_GetITStatus  lto-llvm-d79267.o
+    0x080005f0   0x080005f0   0x00000018   Code   RO          215    .text.USART_ReceiveData  lto-llvm-d79267.o
+    0x08000608   0x08000608   0x00000004   Code   RO          235    .text.UsageFault_Handler  lto-llvm-d79267.o
+    0x0800060c   0x0800060c   0x00000008   Code   RO          219    .text._sys_exit     lto-llvm-d79267.o
     0x08000614   0x08000614   0x0000001a   Code   RO          144    x$fpl$fpinit        fz_wm.l(fpinit.o)
     0x0800062e   0x0800062e   0x00000002   PAD
     0x08000630   0x08000630   0x00000010   Data   RO          258    Region$$Table       anon$$obj.o
@@ -611,7 +611,7 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x20000000        -       0x00000060   Zero   RW           84    .bss                c_w.l(libspace.o)
-    0x20000060        -       0x00000002   Zero   RW          249    .bss.USART_RX_STA   lto-llvm-7e63a2.o
+    0x20000060        -       0x00000002   Zero   RW          249    .bss.USART_RX_STA   lto-llvm-d79267.o
     0x20000062   0x08000640   0x00000006   PAD
     0x20000068        -       0x00000200   Zero   RW            2    HEAP                startup_stm32f40_41xxx.o
     0x20000268        -       0x00000400   Zero   RW            1    STACK               startup_stm32f40_41xxx.o
@@ -624,11 +624,11 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       846          0          0          0          2      23589   lto-llvm-7e63a2.o
+       846          0          0          0          2      23371   lto-llvm-d79267.o
         64         26        392          0       1536        836   startup_stm32f40_41xxx.o
 
     ----------------------------------------------------------------------
-       924         26        408          0       1544      24425   Object Totals
+       924         26        408          0       1544      24207   Object Totals
          0          0         16          0          0          0   (incl. Generated)
         14          0          0          0          6          0   (incl. Padding)
 
@@ -675,8 +675,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      1192         38        408          0       1640      24869   Grand Totals
-      1192         38        408          0       1640      24869   ELF Image Totals
+      1192         38        408          0       1640      24651   Grand Totals
+      1192         38        408          0       1640      24651   ELF Image Totals
       1192         38        408          0          0          0   ROM Totals
 
 ==============================================================================
